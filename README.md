@@ -14,7 +14,7 @@ The development of this API took into account several specific needs. It is care
 
 ### Project Breakdown
 
-**NOTE: The full API documentation can be found [here](https://documenter.getpostman.com/view/5936515/TVmJgy8R)**
+**NOTE: The full API documentation can be found [here](https://documenter.getpostman.com/view/5936515/UVJeEb5A)**
 
 A structure has been established for the implementation of rate-limiting, to circumvent DOS security vulnerabilities with the system.
 
