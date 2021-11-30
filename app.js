@@ -5,6 +5,8 @@ const cors = require('cors');
 const port = process.env.SERVER_PORT;
 const { sequelize } = require('./models');
 
+const patientRouter = require('./routes/Patient');
+
 const app = express();
 
 app.use(cors(), (req, res, next) => {
@@ -16,6 +18,9 @@ app.use(cors(), (req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
+
+app.use('/', [patientRouter]);
+app.use('/api/v1/patient', patientRouter);
 
 sequelize
   .authenticate()
