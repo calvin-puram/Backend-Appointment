@@ -7,6 +7,7 @@ const { sequelize } = require('./models');
 
 const patientRouter = require('./routes/Patient');
 const doctorRouter = require('./routes/Doctor');
+const appointmentRouter = require('./routes/Appointment');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static('./public'));
 
 app.use('/api/v1/patient', patientRouter);
 app.use('/api/v1/doctor', doctorRouter);
+app.use('/api/v1/appointment', appointmentRouter);
 
 sequelize
   .authenticate()
