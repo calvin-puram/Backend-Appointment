@@ -1,5 +1,5 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![license](https://img.shields.io/github/license/t-ho/mern-stack)](https://gitlab.com/calvin-puram/product-store/-/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/t-ho/mern-stack)](https://github.com/calvin-puram/Backend-Appointment/blob/master/LICENSE)
 
 # Appointment App built by:
 
@@ -27,9 +27,9 @@ A structure has been established for the implementation of rate-limiting, to cir
 ### 1. Clone the repository
 
 ```bash
-git clone https://gitlab.com/calvin-puram/product-store.git
-cd product-store
-cp server/.env.example server/.env
+git clone https://github.com/calvin-puram/Backend-Appointment.git
+cd backend-appointment
+cp env.example .env
 # Edit all three .env files to meet your requirements
 ```
 
