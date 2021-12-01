@@ -3,7 +3,6 @@ const express = require('express');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
-const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 
@@ -28,7 +27,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 
 app.use(hpp());
-app.use(mongoSanitize());
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 100,
