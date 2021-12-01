@@ -18,7 +18,6 @@ The development of this API took into account several specific needs. It is care
 
 A structure has been established for the implementation of rate-limiting, to circumvent DOS security vulnerabilities with the system.
 
-- express-mongo-sanitize: which sanitizes user-supplied data to prevent MongoDB Operator Injection.
 - helmet: secure the application by setting various HTTP headers.
 - hpp: this protect the app against HTTP Parameter Pollution Attack
 
