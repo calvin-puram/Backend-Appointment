@@ -1,4 +1,4 @@
-name: njsscan sarif
+name: njsscan
 on:
   push:
     branches: [ master, main ]
@@ -7,7 +7,7 @@ on:
 jobs:
   njsscan:
     runs-on: ubuntu-latest
-    name: njsscan code scanning
+    name: njsscan check
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
@@ -15,8 +15,4 @@ jobs:
       id: njsscan
       uses: ajinabraham/njsscan-action@master
       with:
-        args: '. --sarif --output results.sarif || true'
-    - name: Upload njsscan report
-      uses: github/codeql-action/upload-sarif@v2
-      with:
-        sarif_file: results.sarif
+        args: '.'
